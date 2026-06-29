@@ -16,7 +16,7 @@ export function useAuth() {
     setLoading(true)
     setError(null)
     try {
-      await login({numerodni , password })
+      await login(numerodni, password)
       navigate('/dashboard')
     } catch (err) {
       const msg =
