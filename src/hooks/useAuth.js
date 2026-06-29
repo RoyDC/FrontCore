@@ -12,11 +12,11 @@ export function useAuth() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
-  async function iniciarSesion(username, password) {
+  async function iniciarSesion(numerodni, password) {
     setLoading(true)
     setError(null)
     try {
-      await login({username , password })
+      await login({numerodni , password })
       navigate('/dashboard')
     } catch (err) {
       const msg =

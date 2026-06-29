@@ -18,7 +18,7 @@ export function AuthProvider({ children }) {
     return raw ? JSON.parse(raw) : null
   })
 
-  const login = useCallback(async (numerodni, password) => {
+  const login = useCallback(async ({ numerodni, password }) => {
     const data = await loginService({ numerodni, password })
     const usuario = {
       codpersonal: data.codpersonal,
