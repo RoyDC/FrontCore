@@ -19,20 +19,20 @@ const chips = (arr) => (
 
 // Flor multicolor (colores del logo) usada como decoración del login.
 const PETALOS = [
-  { a: 0, c: '#e6398b' },
-  { a: 60, c: '#f7941e' },
-  { a: 120, c: '#fbc02d' },
-  { a: 180, c: '#4caf50' },
-  { a: 240, c: '#00a9a5' },
-  { a: 300, c: '#8e24aa' },
+  { a: 0, c: '#e53935' },
+  { a: 60, c: '#43a047' },
+  { a: 120, c: '#fdd835' },
+  { a: 180, c: '#002244' },
+  { a: 240, c: '#003366' },
+  { a: 300, c: '#e8a317' },
 ]
 const Flor = ({ className }) => (
   <svg className={className} viewBox="0 0 200 200" aria-hidden="true">
     {PETALOS.map((p) => (
       <ellipse key={p.a} cx="100" cy="50" rx="28" ry="52" fill={p.c} transform={`rotate(${p.a} 100 100)`} />
     ))}
-    <circle cx="100" cy="100" r="34" fill="#fbc02d" />
-    <circle cx="100" cy="100" r="17" fill="#e2132b" />
+    <circle cx="100" cy="100" r="34" fill="#e8a317" />
+    <circle cx="100" cy="100" r="17" fill="#002244" />
   </svg>
 )
 
@@ -41,8 +41,8 @@ const SvgMensaje = (
   <svg className="carrusel__svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid slice">
     <defs>
       <linearGradient id="g-msg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#e6398b" />
-        <stop offset="1" stopColor="#e2132b" />
+        <stop offset="0" stopColor="#002244" />
+        <stop offset="1" stopColor="#003366" />
       </linearGradient>
     </defs>
     <rect width="1000" height="640" fill="url(#g-msg)" />
@@ -60,8 +60,8 @@ const SvgMision = (
   <svg className="carrusel__svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid slice">
     <defs>
       <linearGradient id="g-mis" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#e2132b" />
-        <stop offset="1" stopColor="#f7941e" />
+        <stop offset="0" stopColor="#002244" />
+        <stop offset="1" stopColor="#003366" />
       </linearGradient>
     </defs>
     <rect width="1000" height="640" fill="url(#g-mis)" />
@@ -70,8 +70,8 @@ const SvgMision = (
       <circle cx="130" cy="130" r="125" fill="none" stroke="#ffffff" strokeWidth="16" opacity="0.92" />
       <circle cx="130" cy="130" r="80" fill="none" stroke="#ffffff" strokeWidth="16" opacity="0.85" />
       <circle cx="130" cy="130" r="34" fill="#ffffff" />
-      <path d="M-10 290 L150 130" stroke="#ffe08a" strokeWidth="14" strokeLinecap="round" />
-      <path d="M120 130 h34 v34" fill="none" stroke="#ffe08a" strokeWidth="14" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M-10 290 L150 130" stroke="#e8a317" strokeWidth="14" strokeLinecap="round" />
+      <path d="M120 130 h34 v34" fill="none" stroke="#e8a317" strokeWidth="14" strokeLinecap="round" strokeLinejoin="round" />
     </g>
   </svg>
 )
@@ -81,16 +81,16 @@ const SvgVision = (
   <svg className="carrusel__svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid slice">
     <defs>
       <linearGradient id="g-vis" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#00a9a5" />
-        <stop offset="1" stopColor="#0d3b66" />
+        <stop offset="0" stopColor="#003366" />
+        <stop offset="1" stopColor="#002244" />
       </linearGradient>
     </defs>
     <rect width="1000" height="640" fill="url(#g-vis)" />
     <circle cx="850" cy="540" r="150" fill="#ffffff" opacity="0.06" />
     <g transform="translate(620,230)">
       <path d="M0 90 C90 -12 270 -12 360 90 C270 192 90 192 0 90 Z" fill="#ffffff" opacity="0.96" />
-      <circle cx="180" cy="90" r="54" fill="#0d3b66" />
-      <circle cx="180" cy="90" r="26" fill="#00a9a5" />
+      <circle cx="180" cy="90" r="54" fill="#002244" />
+      <circle cx="180" cy="90" r="26" fill="#003366" />
       <circle cx="198" cy="74" r="9" fill="#ffffff" />
     </g>
   </svg>
@@ -101,8 +101,8 @@ const SvgValores = (
   <svg className="carrusel__svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid slice">
     <defs>
       <linearGradient id="g-val" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#8e24aa" />
-        <stop offset="1" stopColor="#e6398b" />
+        <stop offset="0" stopColor="#002244" />
+        <stop offset="1" stopColor="#004d99" />
       </linearGradient>
     </defs>
     <rect width="1000" height="640" fill="url(#g-val)" />
@@ -120,15 +120,15 @@ const SvgLavado = (
   <svg className="carrusel__svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid slice">
     <defs>
       <linearGradient id="g-lav" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#0d3b66" />
-        <stop offset="1" stopColor="#00a9a5" />
+        <stop offset="0" stopColor="#002244" />
+        <stop offset="1" stopColor="#003366" />
       </linearGradient>
     </defs>
     <rect width="1000" height="640" fill="url(#g-lav)" />
     <circle cx="800" cy="120" r="150" fill="#ffffff" opacity="0.07" />
     <g transform="translate(700,360)">
       <path d="M85 0 L160 30 V96 C160 150 128 176 85 192 C42 176 10 150 10 96 V30 Z" fill="#ffffff" opacity="0.96" />
-      <path d="M52 98 l24 24 l44 -56" fill="none" stroke="#00a9a5" strokeWidth="13" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M52 98 l24 24 l44 -56" fill="none" stroke="#e8a317" strokeWidth="13" strokeLinecap="round" strokeLinejoin="round" />
     </g>
   </svg>
 )
@@ -137,18 +137,18 @@ const SvgPadre = (
   <svg className="carrusel__svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid slice">
     <defs>
       <linearGradient id="g-pad" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#8e24aa" />
-        <stop offset="0.55" stopColor="#e2132b" />
-        <stop offset="1" stopColor="#f7941e" />
+        <stop offset="0" stopColor="#002244" />
+        <stop offset="0.55" stopColor="#003366" />
+        <stop offset="1" stopColor="#004d99" />
       </linearGradient>
     </defs>
     <rect width="1000" height="640" fill="url(#g-pad)" />
     <circle cx="820" cy="130" r="150" fill="#ffffff" opacity="0.08" />
     <g transform="translate(700,360)">
       <rect x="10" y="70" width="170" height="120" rx="10" fill="#ffffff" opacity="0.96" />
-      <rect x="80" y="70" width="30" height="120" fill="#f7941e" />
+      <rect x="80" y="70" width="30" height="120" fill="#e8a317" />
       <rect x="-4" y="48" width="198" height="34" rx="8" fill="#ffffff" />
-      <rect x="80" y="48" width="30" height="34" fill="#f7941e" />
+      <rect x="80" y="48" width="30" height="34" fill="#e8a317" />
       <circle cx="78" cy="40" r="20" fill="none" stroke="#ffffff" strokeWidth="12" />
       <circle cx="112" cy="40" r="20" fill="none" stroke="#ffffff" strokeWidth="12" />
     </g>
@@ -159,18 +159,18 @@ const SvgBandera = (
   <svg className="carrusel__svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid slice">
     <defs>
       <linearGradient id="g-ban" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#7a0d18" />
-        <stop offset="1" stopColor="#b50f22" />
+        <stop offset="0" stopColor="#002244" />
+        <stop offset="1" stopColor="#003366" />
       </linearGradient>
     </defs>
     <rect width="1000" height="640" fill="url(#g-ban)" />
     <circle cx="850" cy="520" r="140" fill="#ffffff" opacity="0.06" />
     <g transform="translate(700,250)">
-      <rect x="0" y="0" width="10" height="230" rx="5" fill="#ffe08a" />
-      <circle cx="5" cy="0" r="9" fill="#ffe08a" />
-      <path d="M10 14 h70 v120 h-70 Z" fill="#e2132b" />
+      <rect x="0" y="0" width="10" height="230" rx="5" fill="#e8a317" />
+      <circle cx="5" cy="0" r="9" fill="#e8a317" />
+      <path d="M10 14 h70 v120 h-70 Z" fill="#002244" />
       <path d="M80 14 h70 v120 h-70 Z" fill="#ffffff" />
-      <path d="M150 14 h70 v120 h-70 Z" fill="#e2132b" />
+      <path d="M150 14 h70 v120 h-70 Z" fill="#003366" />
     </g>
   </svg>
 )
@@ -179,8 +179,8 @@ const SvgMetas = (
   <svg className="carrusel__svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid slice">
     <defs>
       <linearGradient id="g-met" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#1d7874" />
-        <stop offset="1" stopColor="#4caf50" />
+        <stop offset="0" stopColor="#002244" />
+        <stop offset="1" stopColor="#003366" />
       </linearGradient>
     </defs>
     <rect width="1000" height="640" fill="url(#g-met)" />
@@ -189,8 +189,8 @@ const SvgMetas = (
       <rect x="0" y="80" width="40" height="80" rx="6" fill="#ffffff" opacity="0.85" />
       <rect x="60" y="50" width="40" height="110" rx="6" fill="#ffffff" opacity="0.9" />
       <rect x="120" y="20" width="40" height="140" rx="6" fill="#ffffff" opacity="0.96" />
-      <path d="M10 70 L80 40 L140 12" fill="none" stroke="#ffe08a" strokeWidth="8" strokeLinecap="round" />
-      <path d="M120 12 h26 v26" fill="none" stroke="#ffe08a" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10 70 L80 40 L140 12" fill="none" stroke="#e8a317" strokeWidth="8" strokeLinecap="round" />
+      <path d="M120 12 h26 v26" fill="none" stroke="#e8a317" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
     </g>
   </svg>
 )
@@ -362,7 +362,7 @@ export default function HomePage() {
       </div>
 
       <footer className="home-footer-bar">
-        <span>© 2026 Banco Andino · Core Financiero — Sistema interno</span>
+        <span>© 2026 Prymera · Core Financiero — Sistema interno</span>
         <span>
           <a href="#terminos">Términos</a> · <a href="#privacidad">Privacidad</a> ·{' '}
           <a href="#soporte">Soporte</a>

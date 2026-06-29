@@ -1,32 +1,22 @@
 /* ============================================================
-   Landing pública — Banco Andino
-   Paleta inspirada en la manta andina (textil multicolor):
-   rojo · magenta · turquesa · naranja · amarillo · verde · morado
+   Landing pública — Prymera
+   Paleta corporativa: #002244 (azul oscuro) + blanco + #e8a317 (dorado)
    ============================================================ */
 .home {
-  --rojo: #e2132b;
-  --magenta: #e6398b;
-  --turquesa: #00a9a5;
-  --naranja: #f7941e;
-  --amarillo: #fbc02d;
+  --rojo: #002244;
+  --magenta: #003366;
+  --turquesa: #002244;
+  --naranja: #e8a317;
+  --amarillo: #e8a317;
   --verde: #4caf50;
-  --morado: #8e24aa;
-  --azul: #29b6f6;
+  --morado: #002244;
+  --azul: #003366;
 
-  --home-text: #2b2b3a;
-  --home-soft: #6b6b7b;
+  --home-text: #1a2332;
+  --home-soft: #6b7280;
 
-  /* Franja textil reutilizable (evoca la banda tejida de la manta) */
-  --franja: repeating-linear-gradient(
-    90deg,
-    var(--rojo) 0 14px,
-    var(--amarillo) 14px 22px,
-    var(--turquesa) 22px 36px,
-    var(--morado) 36px 44px,
-    var(--verde) 44px 58px,
-    var(--magenta) 58px 66px,
-    var(--naranja) 66px 80px
-  );
+  /* Franja Prymera */
+  --franja: linear-gradient(90deg, #002244 0%, #003366 50%, #e8a317 100%);
 
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   color: var(--home-text);
@@ -39,7 +29,7 @@
 /* Franja decorativa superior */
 .home__franja {
   height: 8px;
-  background: var(--franja);
+  background: linear-gradient(90deg, #002244 0%, #003366 50%, #e8a317 100%);
 }
 
 /* ---------- Header / navbar ---------- */
@@ -48,7 +38,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 14px 40px;
-  border-bottom: 1px solid #f0e6ea;
+  border-bottom: 1px solid #e2e8f0;
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.96);
@@ -61,19 +51,19 @@
   gap: 12px;
   font-weight: 800;
   font-size: 20px;
-  color: var(--rojo);
+  color: #002244;
   letter-spacing: -0.5px;
 }
 .home-logo__mark {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--magenta), var(--rojo) 60%, var(--naranja));
+  background: linear-gradient(135deg, #002244, #003366 60%, #e8a317);
   display: grid;
   place-items: center;
   color: #fff;
   font-size: 20px;
-  box-shadow: 0 4px 12px rgba(226, 19, 43, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 34, 68, 0.35);
 }
 .home-nav__links {
   display: flex;
@@ -87,15 +77,15 @@
   text-decoration: none;
 }
 .home-nav__links a:hover {
-  color: var(--rojo);
+  color: #002244;
 }
 
-/* Botón "Banco Andino por Internet" */
+/* Botón "Banca por Internet" */
 .btn-banca {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--rojo);
+  background: #002244;
   color: #fff;
   border: none;
   padding: 11px 22px;
@@ -103,13 +93,13 @@
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(226, 19, 43, 0.35);
+  box-shadow: 0 6px 16px rgba(0, 34, 68, 0.35);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   text-decoration: none;
 }
 .btn-banca:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(226, 19, 43, 0.45);
+  box-shadow: 0 10px 22px rgba(0, 34, 68, 0.45);
   color: #fff;
   text-decoration: none;
 }
@@ -131,8 +121,8 @@
 }
 .home-hero__eyebrow {
   display: inline-block;
-  background: #fde7ef;
-  color: var(--magenta);
+  background: #e8f0fe;
+  color: #002244;
   font-weight: 700;
   font-size: 13px;
   padding: 6px 14px;
@@ -146,7 +136,7 @@
   letter-spacing: -1px;
 }
 .home-hero h1 .acento {
-  background: linear-gradient(90deg, var(--rojo), var(--magenta), var(--morado));
+  background: linear-gradient(90deg, #002244, #003366, #e8a317);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -166,8 +156,8 @@
   display: inline-flex;
   align-items: center;
   background: #fff;
-  color: var(--rojo);
-  border: 2px solid var(--rojo);
+  color: #002244;
+  border: 2px solid #002244;
   padding: 13px 28px;
   border-radius: 999px;
   font-size: 15px;
@@ -176,28 +166,18 @@
   text-decoration: none;
 }
 .btn-outline:hover {
-  background: #fff5f6;
+  background: #f0f4f8;
   text-decoration: none;
 }
 
-/* Arte del hero: mosaico de colores de la manta */
+/* Arte del hero: gradiente Prymera */
 .home-hero__art {
   position: relative;
   height: 380px;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 24px 60px rgba(142, 36, 170, 0.28);
-  background: conic-gradient(
-    from 45deg,
-    var(--magenta),
-    var(--naranja),
-    var(--amarillo),
-    var(--verde),
-    var(--turquesa),
-    var(--morado),
-    var(--rojo),
-    var(--magenta)
-  );
+  box-shadow: 0 24px 60px rgba(0, 34, 68, 0.28);
+  background: linear-gradient(135deg, #002244 0%, #003366 50%, #004d99 100%);
 }
 .home-hero__art::after {
   content: '';
@@ -220,7 +200,7 @@
 .home-hero__art-badge strong {
   display: block;
   font-size: 26px;
-  color: var(--rojo);
+  color: #002244;
 }
 .home-hero__art-badge span {
   color: var(--home-soft);
@@ -278,7 +258,7 @@
   left: 0;
   right: 0;
   height: 6px;
-  background: var(--barra, var(--rojo));
+  background: var(--barra, #002244);
 }
 .producto-card:hover {
   transform: translateY(-6px);
@@ -292,7 +272,7 @@
   place-items: center;
   font-size: 26px;
   margin-bottom: 16px;
-  background: var(--icon-bg, #fde7ef);
+  background: var(--icon-bg, #e8f0fe);
 }
 .producto-card h3 {
   font-size: 19px;
@@ -307,7 +287,7 @@
 .producto-card__tea {
   font-size: 13px;
   font-weight: 700;
-  color: var(--barra, var(--rojo));
+  color: var(--barra, #002244);
 }
 .producto-card__tea small {
   display: block;
@@ -332,7 +312,7 @@
 .flujo-chip {
   background: #fff;
   border: 1px solid #f0eef2;
-  border-top: 4px solid var(--chip, var(--rojo));
+  border-top: 4px solid var(--chip, #002244);
   border-radius: 12px;
   padding: 12px 16px;
   font-weight: 700;
@@ -384,8 +364,8 @@
   border-bottom: 1px solid #f0e6ea;
 }
 .home-header__chip {
-  background: #fde7ef;
-  color: var(--magenta);
+  background: #e8f0fe;
+  color: #002244;
   font-weight: 700;
   font-size: 12px;
   padding: 6px 14px;
@@ -393,8 +373,8 @@
 }
 .home-footer-bar {
   flex: 0 0 auto;
-  background: #1c1c28;
-  color: #cfcfdc;
+  background: #002244;
+  color: #c8d6e5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -432,7 +412,7 @@
   position: relative;
   display: flex;
   color: #fff;
-  background: linear-gradient(150deg, #8e24aa 0%, #e2132b 52%, #f7941e 100%);
+  background: linear-gradient(150deg, #001a36 0%, #002244 52%, #003366 100%);
   background-size: 180% 180%;
   animation: splitInRight 0.7s cubic-bezier(0.22, 1, 0.36, 1) both,
     lpShift 18s ease 0.7s infinite;
@@ -640,8 +620,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: #fff;
-  color: var(--rojo);
+  background: #002244;
+  color: #fff;
   border: none;
   padding: 14px;
   border-radius: 11px;
@@ -726,19 +706,19 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  background: linear-gradient(100deg, #fff5f7, #ffffff 70%);
-  border: 1px solid #f3d9e2;
-  border-left: 5px solid var(--magenta);
+  background: linear-gradient(100deg, #f0f4f8, #ffffff 70%);
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #002244;
   border-radius: 14px;
   padding: 16px 22px;
-  box-shadow: 0 6px 18px rgba(230, 57, 139, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 34, 68, 0.08);
 }
 .home-motiv__icon {
   width: 46px;
   height: 46px;
   border-radius: 12px;
-  background: #fde7ef;
-  color: var(--magenta);
+  background: #e8f0fe;
+  color: #002244;
   display: grid;
   place-items: center;
   flex: 0 0 auto;
@@ -748,7 +728,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  color: var(--magenta);
+  color: #002244;
 }
 .home-motiv__text {
   font-size: 16px;
@@ -785,7 +765,7 @@
 .esencia-card {
   background: #fff;
   border: 1px solid #f0eef2;
-  border-top: 5px solid var(--barra, var(--rojo));
+  border-top: 5px solid var(--barra, #002244);
   border-radius: 18px;
   padding: 28px 26px;
   box-shadow: 0 8px 24px rgba(43, 43, 58, 0.06);
@@ -803,7 +783,7 @@
   display: grid;
   place-items: center;
   margin-bottom: 16px;
-  background: var(--icon-bg, #fde7ef);
+  background: var(--icon-bg, #e8f0fe);
   transition: transform 0.25s ease;
 }
 .esencia-card:hover .esencia-card__icon {
@@ -828,7 +808,7 @@
   gap: 8px;
 }
 .valores-list li {
-  background: var(--icon-bg, #f4f6fa);
+  background: var(--icon-bg, #e8f0fe);
   color: var(--home-text);
   border-radius: 999px;
   padding: 7px 15px;
@@ -923,7 +903,7 @@
 .carrusel__badge {
   align-self: flex-start;
   background: rgba(255, 255, 255, 0.95);
-  color: var(--rojo);
+  color: #002244;
   font-weight: 800;
   font-size: 11px;
   letter-spacing: 0.6px;
@@ -1003,7 +983,7 @@
 
 /* ---------- Banner banca por internet ---------- */
 .home-banca {
-  background: linear-gradient(120deg, var(--morado), var(--rojo) 55%, var(--naranja));
+  background: linear-gradient(120deg, #002244, #003366 55%, #004d99);
   color: #fff;
   border-radius: 24px;
   padding: 48px 40px;
@@ -1014,7 +994,7 @@
   flex-wrap: wrap;
   max-width: 1100px;
   margin: 20px auto 60px;
-  box-shadow: 0 24px 60px rgba(226, 19, 43, 0.28);
+  box-shadow: 0 24px 60px rgba(0, 34, 68, 0.28);
 }
 .home-banca h2 {
   font-size: 30px;
@@ -1028,11 +1008,11 @@
 }
 .btn-banca--blanco {
   background: #fff;
-  color: var(--rojo);
+  color: #002244;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .btn-banca--blanco:hover {
-  color: var(--rojo);
+  color: #002244;
 }
 
 /* ---------- Beneficios ---------- */
@@ -1048,7 +1028,7 @@
 .beneficio__num {
   font-size: 34px;
   font-weight: 800;
-  background: linear-gradient(90deg, var(--rojo), var(--magenta));
+  background: linear-gradient(90deg, #002244, #003366);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1077,14 +1057,14 @@
   width: 26px;
   height: 26px;
   border-radius: 8px;
-  background: var(--franja);
+  background: linear-gradient(135deg, #002244, #003366);
   background-size: 26px;
   flex: 0 0 auto;
 }
 
 /* ---------- Testimonios ---------- */
 .home-section--alt {
-  background: #fbf7f9;
+  background: #f5f7fa;
   max-width: none;
 }
 .home-section--alt .home-section__inner {
@@ -1101,7 +1081,7 @@
   border-radius: 18px;
   padding: 26px 24px;
   box-shadow: 0 8px 24px rgba(43, 43, 58, 0.07);
-  border-top: 5px solid var(--barra, var(--rojo));
+  border-top: 5px solid var(--barra, #002244);
 }
 .testimonio__texto {
   font-size: 15px;
@@ -1123,7 +1103,7 @@
   color: #fff;
   font-weight: 800;
   font-size: 16px;
-  background: var(--barra, var(--rojo));
+  background: var(--barra, #002244);
 }
 .testimonio__autor strong {
   display: block;
@@ -1157,7 +1137,7 @@
   place-items: center;
   font-size: 24px;
   flex: 0 0 auto;
-  background: var(--icon-bg, #fde7ef);
+  background: var(--icon-bg, #e8f0fe);
 }
 .canal h4 {
   margin: 0 0 4px;
@@ -1198,7 +1178,7 @@
 }
 .faq-item > summary::after {
   content: '+';
-  color: var(--rojo);
+  color: #002244;
   font-size: 22px;
   font-weight: 700;
   transition: transform 0.2s ease;
@@ -1215,13 +1195,13 @@
 
 /* ---------- Footer ---------- */
 .home-footer {
-  background: #1c1c28;
-  color: #cfcfdc;
+  background: #002244;
+  color: #c8d6e5;
   padding: 0;
 }
 .home-footer__franja {
   height: 6px;
-  background: var(--franja);
+  background: linear-gradient(90deg, #002244 0%, #003366 50%, #e8a317 100%);
 }
 .home-footer__inner {
   max-width: 1180px;
